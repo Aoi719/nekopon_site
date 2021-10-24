@@ -19,6 +19,7 @@ time, mark, audio, video {
   border:0;
   outline:0;
   font-size:100%;
+  font-family:"Hiragino Sans", "ヒラギノ角ゴシック", "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", "Meiryo", "メイリオ", sans-serif;
   vertical-align:baseline;
   background:transparent;
 }
@@ -82,7 +83,9 @@ input, select {
 }
 
 // 手動設定
-
+.en {
+  font-family: 'Montserrat', sans-serif;
+}
 .fw_n {
   font-weight: normal;
 }

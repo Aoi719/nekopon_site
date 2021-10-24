@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   position: relative;
@@ -17,6 +18,7 @@ footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   background: transparent;
   border: 0;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", "Meiryo", "メイリオ", sans-serif;
   font-size: 100%;
   margin: 0;
   outline: 0;
@@ -93,6 +95,10 @@ hr {
 
 input, select {
   vertical-align: middle;
+}
+
+.en {
+  font-family: "Montserrat", sans-serif;
 }
 
 .fw_n {
