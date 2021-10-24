@@ -94,3 +94,7 @@ hr {
 input, select {
   vertical-align: middle;
 }
+
+.fw_n {
+  font-weight: normal;
+}

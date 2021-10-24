@@ -1,0 +1,6 @@
+.header {
+  color: #fff;
+}
+.header_image {
+  background: url("../images/index_img01.jpg") no-repeat top center/cover;
+}
