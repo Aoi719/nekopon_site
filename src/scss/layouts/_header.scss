@@ -1,6 +1,28 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/*-------------
+header
+-------------*/
 .header {
-  color: #fff;
-  &_image {
-    background: url('../images/index_img01.jpg') no-repeat top center/ cover;
+  color: v.$white;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  &Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .logo {
+    img {
+      width: 160px;
+    }
+    @include m.pc {
+      transition: .5s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
 }

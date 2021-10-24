@@ -1,6 +1,132 @@
+.navList {
+  font-weight: bold;
+}
+.navList_item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+.btn {
+  background: linear-gradient(to left, #250D65 0%, #7633A4 100%);
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 70px;
+  text-align: center;
+  width: 220px;
+}
+.btn--transparent {
+  background: transparent;
+}
+
+/*-------------
+header
+-------------*/
 .header {
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
-.header_image {
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.header .logo img {
+  width: 160px;
+}
+
+.mvContainer {
+  min-height: 100vh;
+  position: relative;
+}
+.mvImage {
   background: url("../images/index_img01.jpg") no-repeat top center/cover;
+  min-height: inherit;
+}
+.mv_contents {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.mvHeading {
+  color: #fff;
+}
+.mvHeading_main {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  font-weight: bold;
+}
+.mvHeading_sub {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0 46px;
+}
+@media screen and (min-width: 1025px) {
+  .header .navList_item:not(:last-child) {
+    margin-right: 25px;
+  }
+  .header .navList_item:hover::before {
+    -webkit-animation: navLine 0.5s;
+            animation: navLine 0.5s;
+    border: 1px solid #fff;
+    bottom: -5px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  @-webkit-keyframes navLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes navLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .footer .navList_item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .navList {
+    display: flex;
+  }
+  .btn {
+    transition: 0.5s;
+  }
+  .btn:not(.btn--transparent):hover {
+    background: linear-gradient(to left, #7633A4 0%, #250D65 100%);
+  }
+  .header .logo {
+    transition: 0.5s;
+  }
+  .header .logo:hover {
+    opacity: 0.7;
+  }
+}
+@media screen and (max-width: 599px) {
+  .mvHeading_main {
+    font-size: 48px;
+  }
 }

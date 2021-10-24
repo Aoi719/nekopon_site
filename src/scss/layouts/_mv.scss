@@ -1,0 +1,39 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.mv {
+  &Container {
+    position: relative;
+    min-height: 100vh;
+  }
+  &Image {
+    min-height: inherit;
+    background: url('../images/index_img01.jpg') no-repeat top center/ cover;
+  }
+  &_contents {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-align: center;
+  }
+}
+.mvHeading {
+  color: v.$white;
+  &_main {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    @include m.sp {
+      font-size: 48px;
+    }
+  }
+  &_sub {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0 46px;
+  }
+}

@@ -1,4 +1,10 @@
+// use
+// variables,mixins
+@use "base/variables";
+@use "base/mixins";
+
 // components
+@use "components/nav";
 @use "components/button";
 
 // layouts

@@ -1,0 +1,26 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.btn {
+  display: block;
+  color: v.$white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background: v.$purple-gradation;
+  border: 1px solid v.$white;
+  border-radius: 50px;
+  padding: 20px 70px;
+  width: 220px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  &--transparent {
+    background: transparent;
+  }
+  @include m.pc {
+    transition: 0.5s;
+    &:not(&--transparent):hover {
+      background: v.$purple-gradation-reverse;
+    }
+  }
+}
