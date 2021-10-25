@@ -106,3 +106,12 @@ input, select {
 .fw_n {
   font-weight: normal;
 }
+
+.ta-c {
+  text-align: center;
+}
+
+.mtb-25 {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}

@@ -65,6 +65,30 @@
   margin: 20px 0;
   text-align: center;
 }
+.clipBox.type-row {
+  display: flex;
+}
+.clipBox.type-row.img-left {
+  flex-direction: row;
+}
+.clipBox.type-row.img-right {
+  flex-direction: row-reverse;
+}
+.clipBox.type-row.img-overlap {
+  position: relative;
+}
+.clipBox.type-row.img-overlap .clipBox_image {
+  margin-top: 60px;
+  z-index: 3;
+}
+.clipBox.type-row.img-overlap .clipBox_text {
+  padding: 217px 120px 217px 460px;
+  position: absolute;
+  right: 0;
+}
+.clipBox .bg-gray {
+  background: #F0F0F0;
+}
 
 /*-------------
 header
@@ -123,13 +147,13 @@ header
   margin-top: 140px;
   max-width: 1100px;
 }
-.section .width-wide {
+.section.width-wide {
   max-width: 1261px;
 }
-.section .width-narrow {
+.section.width-narrow {
   max-width: 750px;
 }
-.section .width-full {
+.section.width-full {
   max-width: 100%;
 }
 
@@ -156,6 +180,11 @@ header
   text-align: center;
   width: 80px;
 }
+
+.company {
+  padding-top: 100px;
+}
+
 @media screen and (min-width: 1025px) {
   .header .navList_item:not(:last-child) {
     margin-right: 25px;
@@ -206,6 +235,7 @@ header
     opacity: 0.7;
   }
 }
+
 @media screen and (max-width: 599px) {
   .mvHeading_main {
     font-size: 48px;

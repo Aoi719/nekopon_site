@@ -1,3 +1,6 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
 *{
   box-sizing: border-box;
   position: relative;
@@ -90,4 +93,12 @@ input, select {
 }
 .fw_n {
   font-weight: normal;
+}
+.ta-c {
+  text-align: center;
+}
+
+.mtb-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

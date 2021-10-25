@@ -26,5 +26,32 @@
       text-align: center;
       margin: 20px 0;
     }
+    .wide {
+
+    }
+  }
+  &.type-row {
+    display: flex;
+    &.img-left {
+      flex-direction: row;
+    }
+    &.img-right {
+      flex-direction: row-reverse;
+    }
+    &.img-overlap {
+      position: relative;
+      .clipBox_image {
+        z-index: 3;
+        margin-top: 60px;
+      }
+      .clipBox_text {
+        padding: 217px 120px 217px 460px;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  .bg-gray {
+    background: #F0F0F0;
   }
 }
