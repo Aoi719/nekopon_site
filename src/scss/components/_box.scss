@@ -1,0 +1,30 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.colContainer {
+  .colBox {
+    display: flex;
+    justify-content: space-between;
+    &--col3 {
+      margin: 25px 0;
+      .col {
+        width: 350px;
+        img {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+.clipBox {
+  &_text {
+    .head {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+}

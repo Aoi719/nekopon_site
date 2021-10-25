@@ -20,6 +20,8 @@ time, mark, audio, video {
   border: 0;
   font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", "Meiryo", "メイリオ", sans-serif;
   font-size: 100%;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
   margin: 0;
   outline: 0;
   padding: 0;

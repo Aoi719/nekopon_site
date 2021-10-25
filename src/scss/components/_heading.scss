@@ -1,0 +1,21 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.primaryHeading {
+  text-align: center;
+  color: v.$purple;
+  &_main {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 0.9;
+  }
+  &_sub {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 0.9;
+  }
+  &--pcNoCenter {
+    text-align: left;
+  }
+}

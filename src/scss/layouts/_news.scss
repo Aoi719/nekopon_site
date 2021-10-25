@@ -1,0 +1,28 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  max-width: 917px;
+  &List {
+    &_inner {
+      display: flex;
+      &:not(:first-of-type) {
+        margin-top: 15px;
+      }
+    }
+    .category {
+      background-color: #e8e8e8;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      margin: 0 20px;
+    }
+  }
+}
