@@ -53,6 +53,9 @@ a {
   vertical-align:baseline;
   background:transparent;
 }
+img {
+  vertical-align: bottom;
+}
 ins {
   background-color:#ff9;
   color:#333;
@@ -101,4 +104,8 @@ input, select {
 .mtb-25 {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.mtb-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

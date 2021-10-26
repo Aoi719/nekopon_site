@@ -65,6 +65,9 @@
   margin: 20px 0;
   text-align: center;
 }
+.clipBox_text.wide {
+  padding: 217px 120px 217px 460px;
+}
 .clipBox.type-row {
   display: flex;
 }
@@ -74,6 +77,13 @@
 .clipBox.type-row.img-right {
   flex-direction: row-reverse;
 }
+.clipBox.type-row.img-right .clipBox_text {
+  align-items: center;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+}
 .clipBox.type-row.img-overlap {
   position: relative;
 }
@@ -82,7 +92,6 @@
   z-index: 3;
 }
 .clipBox.type-row.img-overlap .clipBox_text {
-  padding: 217px 120px 217px 460px;
   position: absolute;
   right: 0;
 }

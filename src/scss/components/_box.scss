@@ -26,8 +26,8 @@
       text-align: center;
       margin: 20px 0;
     }
-    .wide {
-
+    &.wide {
+      padding: 217px 120px 217px 460px;
     }
   }
   &.type-row {
@@ -37,6 +37,13 @@
     }
     &.img-right {
       flex-direction: row-reverse;
+      .clipBox_text {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
     &.img-overlap {
       position: relative;
@@ -45,7 +52,6 @@
         margin-top: 60px;
       }
       .clipBox_text {
-        padding: 217px 120px 217px 460px;
         position: absolute;
         right: 0;
       }
