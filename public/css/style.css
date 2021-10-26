@@ -214,6 +214,23 @@ header
   margin-top: 0;
 }
 
+.footerContainer {
+  background: #120e19;
+  padding: 60px 0;
+}
+.footer .navList {
+  color: #fff;
+  justify-content: center;
+}
+.footer .copy {
+  color: #a798b7;
+  margin-top: 20px;
+  text-align: center;
+}
+.footer .copy small {
+  font-family: "Montserrat", sans-serif;
+}
+
 .company {
   padding-top: 100px;
 }
