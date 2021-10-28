@@ -231,7 +231,7 @@ header
   font-family: "Montserrat", sans-serif;
 }
 
-.company {
+.top .company {
   padding-top: 100px;
 }
 
@@ -283,6 +283,12 @@ header
   }
   .header .logo:hover {
     opacity: 0.7;
+  }
+  .top .company {
+    background-image: url(../images/index_img06.jpg), url(../images/index_img07.jpg), url(../images/index_img08.jpg), url(../images/index_img09.jpg), url(../images/index_img10.jpg);
+    background-position: 0 50%, 100% 50%, 10% 100%, 90% 100%, center;
+    background-repeat: no-repeat;
+    background-size: 15%, 15%, 10%, 10%, 60%;
   }
 }
 
