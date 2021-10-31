@@ -16,17 +16,33 @@
   border-top: 2px solid #fff;
   height: 2px;
   position: absolute;
+  transition: 0.5s;
   width: 100%;
 }
 .menuBar_item:first-child {
   top: 0;
 }
 .menuBar_item:nth-child(2) {
+  opacity: 1;
   top: 50%;
   transform: translateY(-50%);
 }
 .menuBar_item:last-child {
   bottom: 0;
+}
+.menuBar.active {
+  z-index: 999;
+}
+.menuBar.active .menuBar_item:first-child {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.menuBar.active .menuBar_item:nth-child(2) {
+  opacity: 0;
+}
+.menuBar.active .menuBar_item:last-child {
+  bottom: 50%;
+  transform: rotate(-45deg);
 }
 
 .btn {
@@ -264,20 +280,18 @@ header
     top: 0;
   }
   .nav {
+    display: none;
+    transition: 0.5s;
+  }
+  .nav.active {
     background: linear-gradient(#642390 0%, #19074a 100%);
+    display: block;
     height: 100vh;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 998;
-  }
-  .navList {
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    width: 100%;
   }
   .navList_item:not(:first-child) {
     margin-top: 20px;
@@ -367,6 +381,15 @@ header
   .top .company {
     margin-top: 0;
     padding-top: 0;
+  }
+}
+@media screen and (max-width: 599px) and (max-width: 599px) {
+  .nav.active .navList {
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1025px) {
