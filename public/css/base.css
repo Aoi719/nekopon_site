@@ -124,3 +124,18 @@ input, select {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 599px) {
+  body {
+    font-size: 14px;
+  }
+  .sp-show {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .sp-show {
+    display: none;
+  }
+}

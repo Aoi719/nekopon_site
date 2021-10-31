@@ -30,6 +30,9 @@ time, mark, audio, video {
 }
 body {
   line-height:1;
+  @include m.sp {
+    font-size: 14px;
+  }
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section,main {
@@ -91,6 +94,14 @@ input, select {
 }
 
 // 手動設定
+.sp-show {
+  @include m.pc {
+    display: none;
+  }
+  @include m.sp {
+    display: block;
+  }
+}
 .en {
   font-family: 'Montserrat', sans-serif;
 }

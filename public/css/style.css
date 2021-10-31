@@ -1,10 +1,32 @@
 .navList {
+  display: flex;
   font-weight: bold;
 }
 .navList_item {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   position: relative;
+}
+
+.menuBar {
+  width: 35px;
+  z-index: 999;
+}
+.menuBar_item {
+  border-top: 2px solid #fff;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+.menuBar_item:first-child {
+  top: 0;
+}
+.menuBar_item:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menuBar_item:last-child {
+  bottom: 0;
 }
 
 .btn {
@@ -57,7 +79,6 @@
 .colContainer .colBox--col3 .col img {
   width: 350px;
 }
-
 .clipBox_text .head {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -83,9 +104,6 @@
   flex: auto;
   flex-direction: column;
   justify-content: center;
-}
-.clipBox.type-row.img-overlap {
-  position: relative;
 }
 .clipBox.type-row.img-overlap .clipBox_image {
   margin-top: 60px;
@@ -234,7 +252,123 @@ header
 .top .company {
   padding-top: 100px;
 }
-
+.top .recruit .section-inner {
+  padding: 0;
+}
+@media screen and (max-width: 599px) {
+  .headerNav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav {
+    background: linear-gradient(#642390 0%, #19074a 100%);
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+  }
+  .navList {
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+  .navList_item:not(:first-child) {
+    margin-top: 20px;
+  }
+  .primaryHeading--pcNoCenter {
+    text-align: center;
+  }
+  .colContainer .colBox {
+    display: block;
+  }
+  .colContainer .colBox--col3 .col {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .colContainer .colBox--col3 .col img {
+    width: 100%;
+  }
+  .clipBox_text {
+    padding: 60px 0 50px;
+  }
+  .clipBox_text.wide {
+    padding: 150px 20px 60px;
+  }
+  .clipBox_image img {
+    max-width: 100%;
+  }
+  .clipBox.type-row {
+    display: block;
+  }
+  .clipBox.type-row.img-overlap .clipBox_image {
+    max-width: 100%;
+  }
+  .clipBox.type-row.img-overlap .clipBox_image img {
+    max-width: 100%;
+  }
+  .clipBox.type-row.img-overlap .clipBox_text {
+    position: static;
+    transform: translate(-20px, -115px);
+    width: 100vw;
+  }
+  .lead {
+    font-size: 32px;
+  }
+  .marker span {
+    display: block;
+  }
+  .headerContainer {
+    max-width: 100%;
+    padding: 20px 20px 0;
+  }
+  .mvContainer .btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mv_contents {
+    padding: 0 20px;
+    text-align: left;
+  }
+  .mvHeading_main {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  .mvHeading_sub {
+    font-size: 16px;
+  }
+  .section-inner {
+    padding: 0 20px;
+  }
+  .newsList_inner:not(:first-of-type) {
+    margin-top: 35px;
+  }
+  .newsList_inner:first-of-type {
+    margin-top: 60px;
+  }
+  .newsList_inner {
+    flex-wrap: wrap;
+  }
+  .newsList .item {
+    margin-top: 10px;
+  }
+  .news {
+    display: block;
+  }
+  .cva {
+    margin-top: 80px;
+  }
+  .top .company {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
 @media screen and (min-width: 1025px) {
   .header .navList_item:not(:last-child) {
     margin-right: 25px;
@@ -269,8 +403,11 @@ header
   .footer .navList_item:not(:last-child) {
     margin-right: 30px;
   }
-  .navList {
-    display: flex;
+  .menuBar {
+    display: none;
+  }
+  .menuBar_item {
+    display: none;
   }
   .btn {
     transition: 0.5s;
@@ -289,14 +426,5 @@ header
     background-position: 0 50%, 100% 50%, 10% 100%, 90% 100%, center;
     background-repeat: no-repeat;
     background-size: 15%, 15%, 10%, 10%, 60%;
-  }
-}
-
-@media screen and (max-width: 599px) {
-  .mvHeading_main {
-    font-size: 48px;
-  }
-  .cva {
-    margin-top: 80px;
   }
 }

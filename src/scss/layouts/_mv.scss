@@ -5,6 +5,12 @@
   &Container {
     position: relative;
     min-height: 100vh;
+    .btn {
+      @include m.sp {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
   &Image {
     min-height: inherit;
@@ -17,6 +23,10 @@
     transform: translate(0, -50%);
     width: 100%;
     text-align: center;
+    @include m.sp {
+      padding: 0 20px;
+      text-align: left;
+    }
   }
 }
 .mvHeading {
@@ -28,6 +38,7 @@
     font-weight: bold;
     @include m.sp {
       font-size: 48px;
+      line-height: 1.2;
     }
   }
   &_sub {
@@ -35,5 +46,8 @@
     font-size: 24px;
     font-weight: 600;
     margin: 15px 0 46px;
+    @include m.sp {
+      font-size: 16px;
+    }
   }
 }

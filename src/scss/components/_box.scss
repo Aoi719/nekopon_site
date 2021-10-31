@@ -5,12 +5,22 @@
   .colBox {
     display: flex;
     justify-content: space-between;
+    @include m.sp {
+      display: block;
+    }
     &--col3 {
       margin: 25px 0;
       .col {
         width: 350px;
+        @include m.sp {
+          width: 100%;
+          margin-top: 40px;
+        }
         img {
           width: 350px;
+          @include m.sp {
+            width: 100%;
+          }
         }
       }
     }
@@ -19,6 +29,9 @@
 
 .clipBox {
   &_text {
+    @include m.sp {
+      padding: 60px 0 50px;
+    }
     .head {
       font-family: 'Montserrat', sans-serif;
       font-size: 18px;
@@ -28,10 +41,23 @@
     }
     &.wide {
       padding: 217px 120px 217px 460px;
+      @include m.sp {
+        padding: 150px 20px 60px;
+      }
+    }
+  }
+  &_image {
+    img{
+      @include m.sp {
+        max-width: 100%;
+      }
     }
   }
   &.type-row {
     display: flex;
+    @include m.sp {
+      display: block;
+    }
     &.img-left {
       flex-direction: row;
     }
@@ -46,14 +72,26 @@
       }
     }
     &.img-overlap {
-      position: relative;
       .clipBox_image {
         z-index: 3;
         margin-top: 60px;
+        @include m.sp {
+          max-width: 100%;
+        }
+        img {
+          @include m.sp {
+            max-width: 100%;
+          }
+        }
       }
       .clipBox_text {
         position: absolute;
         right: 0;
+        @include m.sp {
+          position: static;
+          width: 100vw;
+          transform: translate(-20px, -115px);
+        }
       }
     }
   }

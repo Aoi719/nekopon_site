@@ -15,4 +15,9 @@
   &.width-full{
     max-width: 100%;
   }
+  &-inner {
+    @include m.sp {
+      padding: 0 20px;
+    }
+  }
 }

@@ -10,6 +10,17 @@
       display: flex;
       &:not(:first-of-type) {
         margin-top: 15px;
+        @include m.sp {
+          margin-top: 35px;
+        }
+      }
+      &:first-of-type {
+        @include m.sp {
+          margin-top: 60px;
+        }
+      }
+      @include m.sp {
+        flex-wrap: wrap;
       }
     }
     .category {
@@ -24,5 +35,13 @@
       width: 80px;
       margin: 0 20px;
     }
+    .item {
+      @include m.sp {
+        margin-top: 10px;
+      }
+    }
+  }
+  @include m.sp {
+    display: block;
   }
 }

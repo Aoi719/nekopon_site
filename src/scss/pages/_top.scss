@@ -4,6 +4,10 @@
 .top {
   .company {
     padding-top: 100px;
+    @include m.sp {
+      padding-top: 0;
+      margin-top: 0;
+    }
     @include m.pc {
       background-repeat: no-repeat;
       background-image: url(../images/index_img06.jpg),
@@ -13,6 +17,11 @@
                         url(../images/index_img10.jpg);
       background-position: 0 50%, 100% 50%, 10% 100%, 90% 100%, center;
       background-size: 15%, 15%, 10%, 10%, 60%;
+    }
+  }
+  .recruit {
+    .section-inner {
+      padding: 0;
     }
   }
 }

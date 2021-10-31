@@ -17,5 +17,8 @@
   }
   &--pcNoCenter {
     text-align: left;
+    @include m.sp {
+      text-align: center;
+    }
   }
 }
