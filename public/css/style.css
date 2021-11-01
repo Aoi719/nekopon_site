@@ -214,6 +214,57 @@ header
   margin: 15px 0 46px;
 }
 
+.scrollContainer {
+  bottom: 90px;
+  position: absolute;
+  right: 20px;
+}
+.scrollContainer::after {
+  -webkit-animation: scroll 1.5s infinite;
+          animation: scroll 1.5s infinite;
+  border: 1px solid #fff;
+  content: "";
+  height: 80px;
+  left: 50%;
+  position: absolute;
+  top: 60px;
+  width: 0;
+}
+@-webkit-keyframes scroll {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 80px;
+    @media screen and (max-width: 599px) {
+      .scrollContainer {
+        height: 60px;
+      }
+    }
+  }
+}
+@keyframes scroll {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 80px;
+    @media screen and (max-width: 599px) {
+      .scrollContainer {
+        height: 60px;
+      }
+    }
+  }
+}
+.scrollContainer .text {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+
 .section {
   margin-left: auto;
   margin-right: auto;
@@ -379,6 +430,9 @@ header
   }
   .mvHeading_sub {
     font-size: 16px;
+  }
+  .scrollContainer {
+    bottom: 60px;
   }
   .section-inner {
     padding: 0 20px;
