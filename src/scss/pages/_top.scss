@@ -7,6 +7,11 @@
     @include m.sp {
       padding-top: 0;
       margin-top: 0;
+      background-repeat: no-repeat;
+      background-image: url(../images/index_img10_sp.jpg);
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 100px;
     }
     @include m.pc {
       background-repeat: no-repeat;
@@ -20,6 +25,9 @@
     }
   }
   .recruit {
+    @include m.sp {
+      margin-top: 20px;
+    }
     .section-inner {
       padding: 0;
     }

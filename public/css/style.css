@@ -399,8 +399,16 @@ header
     margin-top: 80px;
   }
   .top .company {
+    background-image: url(../images/index_img10_sp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 0;
+    padding-bottom: 100px;
     padding-top: 0;
+  }
+  .top .recruit {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 599px) and (max-width: 599px) {
