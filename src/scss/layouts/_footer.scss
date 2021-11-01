@@ -4,7 +4,7 @@
 .footer {
   &Container {
     background: #120e19;
-    padding: 60px 0;
+    padding: 60px 20px;
   }
   .nav {
     &List {
@@ -15,7 +15,6 @@
   .copy {
     text-align: center;
     color: #a798b7;
-    margin-top: 20px;
     small {
       font-family: "Montserrat", sans-serif;
     }

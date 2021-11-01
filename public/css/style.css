@@ -1,3 +1,6 @@
+.headerNav {
+  max-width: 100%;
+}
 .navList {
   display: flex;
   font-weight: bold;
@@ -6,6 +9,12 @@
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   position: relative;
+}
+.footer .navList_item {
+  margin-bottom: 20px;
+}
+.footer .navList_item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .menuBar {
@@ -162,6 +171,12 @@ header
   justify-content: space-between;
   padding: 30px;
 }
+.header_image {
+  transition: 0.5s;
+}
+.header_image.active {
+  background: #21054d;
+}
 .header .logo img {
   width: 160px;
 }
@@ -250,7 +265,7 @@ header
 
 .footerContainer {
   background: #120e19;
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 .footer .navList {
   color: #fff;
@@ -258,7 +273,6 @@ header
 }
 .footer .copy {
   color: #a798b7;
-  margin-top: 20px;
   text-align: center;
 }
 .footer .copy small {
@@ -279,11 +293,10 @@ header
     right: 0;
     top: 0;
   }
-  .nav {
+  .headerNav .nav {
     display: none;
-    transition: 0.5s;
   }
-  .nav.active {
+  .headerNav .nav.active {
     background: linear-gradient(#642390 0%, #19074a 100%);
     display: block;
     height: 100vh;
@@ -293,8 +306,15 @@ header
     width: 100%;
     z-index: 998;
   }
-  .navList_item:not(:first-child) {
-    margin-top: 20px;
+  .nav {
+    transition: 0.5s;
+  }
+  .footer .navList {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer .navList_item:not(:last-child) {
+    margin-right: 20px;
   }
   .primaryHeading--pcNoCenter {
     text-align: center;
@@ -340,7 +360,7 @@ header
   }
   .headerContainer {
     max-width: 100%;
-    padding: 20px 20px 0;
+    padding: 20px;
   }
   .mvContainer .btn {
     margin-left: 0;
@@ -384,7 +404,7 @@ header
   }
 }
 @media screen and (max-width: 599px) and (max-width: 599px) {
-  .nav.active .navList {
+  .headerNav .nav.active .navList {
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -422,9 +442,6 @@ header
     100% {
       width: 100%;
     }
-  }
-  .footer .navList_item:not(:last-child) {
-    margin-right: 30px;
   }
   .menuBar {
     display: none;

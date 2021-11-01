@@ -2,6 +2,7 @@
 @use "base/mixins" as m;
 
 .headerNav{
+  max-width: 100%;
   @include m.sp {
     position: absolute;
     top: 0;
@@ -9,36 +10,44 @@
     right: 0;
     bottom: 0;
   }
-}
 .nav {
-  @include m.sp {
-    display: none;
-    // opacity: 0;
-    transition: 0.5s;
-    &.active{
-      display: block;
-      // opacity: 1;
-      background: linear-gradient(#642390 0%, #19074a 100%);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      z-index: 998;
-  .navList {
     @include m.sp {
-      width: 100%;
-      height: 100vh;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      display: none;
+      &.active{
+        display: block;
+        background: linear-gradient(#642390 0%, #19074a 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 998;
+        .navList {
+          @include m.sp {
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
     }
   }
 }
-}
+.nav {
+  @include m.sp {
+    transition: 0.5s;
+  }
   &List {
     display: flex;
     font-weight: bold;
+    .footer & {
+      @include m.sp {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    }
     &_item {
       font-size: 14px;
       font-family: 'Montserrat', sans-serif;
@@ -67,15 +76,14 @@
             }
           }
         }
-        .footer & {
-          &:not(:last-child) {
-            margin-right: 30px;
-          }
-        }
       }
-      @include m.sp {
-        &:not(:first-child) {
-          margin-top: 20px;
+      .footer & {
+        margin-bottom: 20px;
+        &:not(:last-child) {
+          margin-right: 30px;
+          @include m.sp {
+            margin-right: 20px;
+          }
         }
       }
     }
