@@ -306,6 +306,9 @@ header
     width: 100%;
     z-index: 998;
   }
+  .headerNav .nav.active .navList_item:not(:first-child) {
+    margin-top: 20px;
+  }
   .nav {
     transition: 0.5s;
   }

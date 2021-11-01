@@ -30,6 +30,11 @@
             justify-content: center;
             align-items: center;
           }
+          &_item {
+            &:not(:first-child){
+              margin-top: 20px;
+            }
+          }
         }
       }
     }
