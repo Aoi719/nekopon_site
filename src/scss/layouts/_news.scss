@@ -2,12 +2,13 @@
 @use "base/mixins" as m;
 
 .news {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   max-width: 917px;
   &List {
     &_inner {
-      display: flex;
+      // display: inline-block;
+      // display: flex;
       &:not(:first-of-type) {
         margin-top: 15px;
         @include m.sp {
@@ -23,19 +24,27 @@
         flex-wrap: wrap;
       }
     }
+    .date {
+      display: inline-block;
+    }
     .category {
       background-color: #e8e8e8;
       border-radius: 50px;
       font-size: 12px;
       font-weight: bold;
       text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: inline-block;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
       width: 80px;
       margin: 0 20px;
     }
     .item {
+      display: inline-block;
+      @include m.expc {
+        display: block;
+      }
       @include m.sp {
         margin-top: 10px;
       }

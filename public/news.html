@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEWS : WEB DESIGN SPECIALIST | お客様の夢を叶えるWebサイトを制作</title>
+  <!-- <meta name="keywords" content="カンマ区切りで10個以内推奨"> -->
+  <meta name="description" content="お客様の夢を叶えるWebサイトを制作">
+  <!-- OGP -->
+  <meta property="og:title" content="NEWS : WEB DESIGN SPECIALIST | お客様の夢を叶えるWebサイトを制作">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="1200×630以上推奨、絶対パスで指定">
+  <meta property="og:site_name" content="EB DESIGN SPECIALIST | お客様の夢を叶えるWebサイトを制作">
+  <meta property="og:description" content="お客様の夢を叶えるWebサイトを制作">
+  <meta name="twitter:card" content="summary or summary_large_image">
+  <meta name="twitter:site" content="@ユーザー名">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="article">
+
+  <!-- header埋め込み -->
+  <div id="js-header"></div>
+
+  <main>
+    <!-- mv -->
+    <div class="mvContainer">
+      <div class="mvImage">
+        <div class="mv_contents">
+          <h1 class="mvHeading">
+            <span class="mvHeading_main">
+              NEWS
+            </span>
+            <span class="mvHeading_sub">
+              お知らせ
+            </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- パンくず -->
+    <div class="breadcrumb">
+      <ol class="breadcrumbList">
+        <li class="breadcrumbList_item">
+          <a href="./">HOME</a>
+        </li>
+        <li class="breadcrumbList_item">
+          NEWS
+        </li>
+      </ol>
+    </div>
+
+    <!-- ニュースコンテンツ -->
+    <div class="section">
+      <div class="section-inner">
+        <div class="news">
+          <div class="newsContainer">
+            <ul class="newsList">
+              <li class="newsList_inner">
+                <div class="date">2030.02.01</div>
+                <div class="category">お知らせ</div>
+                <div class="item">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</div>
+              </li>
+              <li class="newsList_inner">
+                <div class="date">2030.01.25</div>
+                <div class="category">制作実績</div>
+                <div class="item">Smoothiesta様のWebサイトを制作いたしました</div>
+              </li>
+              <li class="newsList_inner">
+                <div class="date">2030.01.20</div>
+                <div class="category">採用</div>
+                <div class="item">Webデザイナーを１名募集中です！</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </>
+  </main>
+
+  <!-- footer埋め込み -->
+  <div id="js-footer"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $('#js-header').load('parts/header.html');
+    $('#js-footer').load('parts/footer.html');
+  </script>
+  <!-- <script src="js/menu.js"></script> -->
+</body>
+</html>
