@@ -15,11 +15,11 @@
         }
       }
       &:first-of-type {
-        @include m.sp {
+        @include m.expc {
           margin-top: 60px;
         }
       }
-      @include m.sp {
+      @include m.expc {
         flex-wrap: wrap;
       }
     }
@@ -41,7 +41,7 @@
       }
     }
   }
-  @include m.sp {
+  @include m.expc {
     display: block;
   }
 }

@@ -4,7 +4,7 @@
 .top {
   .company {
     padding-top: 100px;
-    @include m.sp {
+    @include m.expc {
       padding-top: 0;
       margin-top: 0;
       background-repeat: no-repeat;
@@ -30,6 +30,16 @@
     }
     .section-inner {
       padding: 0;
+    }
+    .clipBox {
+      &_image {
+        img{
+          max-width: 665px;
+          @include m.expc {
+            max-width: 100%;
+          }
+        }
+      }
     }
   }
 }

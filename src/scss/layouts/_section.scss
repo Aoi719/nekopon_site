@@ -16,7 +16,7 @@
     max-width: 100%;
   }
   &-inner {
-    @include m.sp {
+    @include m.expc {
       padding: 0 20px;
     }
   }

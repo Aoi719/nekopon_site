@@ -14,3 +14,8 @@
     @content;
   }
 }
+@mixin expc {
+  @media screen and (max-width:1024px) {
+    @content;
+  }
+}

@@ -104,6 +104,7 @@
 .colContainer .colBox--col3 .col img {
   width: 350px;
 }
+
 .clipBox_text .head {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -336,7 +337,10 @@ header
 .top .recruit .section-inner {
   padding: 0;
 }
-@media screen and (max-width: 599px) {
+.top .recruit .clipBox_image img {
+  max-width: 665px;
+}
+@media screen and (max-width: 1024px) {
   .headerNav {
     bottom: 0;
     left: 0;
@@ -360,31 +364,8 @@ header
   .headerNav .nav.active .navList_item:not(:first-child) {
     margin-top: 20px;
   }
-  .nav {
-    transition: 0.5s;
-  }
-  .footer .navList {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .footer .navList_item:not(:last-child) {
-    margin-right: 20px;
-  }
   .primaryHeading--pcNoCenter {
     text-align: center;
-  }
-  .colContainer .colBox {
-    display: block;
-  }
-  .colContainer .colBox--col3 .col {
-    margin-top: 40px;
-    width: 100%;
-  }
-  .colContainer .colBox--col3 .col img {
-    width: 100%;
-  }
-  .clipBox_text {
-    padding: 60px 0 50px;
   }
   .clipBox_text.wide {
     padding: 150px 20px 60px;
@@ -405,6 +386,64 @@ header
     position: static;
     transform: translate(-20px, -115px);
     width: 100vw;
+  }
+  .section-inner {
+    padding: 0 20px;
+  }
+  .newsList_inner:first-of-type {
+    margin-top: 60px;
+  }
+  .newsList_inner {
+    flex-wrap: wrap;
+  }
+  .news {
+    display: block;
+  }
+  .top .company {
+    background-image: url(../images/index_img10_sp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    padding-bottom: 100px;
+    padding-top: 0;
+  }
+  .top .recruit .clipBox_image img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .headerNav .nav.active .navList {
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .nav {
+    transition: 0.5s;
+  }
+  .footer .navList {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer .navList_item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .colContainer .colBox {
+    display: block;
+  }
+  .colContainer .colBox--col3 .col {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .colContainer .colBox--col3 .col img {
+    width: 100%;
+  }
+  .clipBox:not(.img-overlap) .clipBox_text.bg-gray {
+    padding: 60px 0 50px;
   }
   .lead {
     font-size: 32px;
@@ -434,47 +473,17 @@ header
   .scrollContainer {
     bottom: 60px;
   }
-  .section-inner {
-    padding: 0 20px;
-  }
   .newsList_inner:not(:first-of-type) {
     margin-top: 35px;
-  }
-  .newsList_inner:first-of-type {
-    margin-top: 60px;
-  }
-  .newsList_inner {
-    flex-wrap: wrap;
   }
   .newsList .item {
     margin-top: 10px;
   }
-  .news {
-    display: block;
-  }
   .cva {
     margin-top: 80px;
   }
-  .top .company {
-    background-image: url(../images/index_img10_sp.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0;
-    padding-bottom: 100px;
-    padding-top: 0;
-  }
   .top .recruit {
     margin-top: 20px;
-  }
-}
-@media screen and (max-width: 599px) and (max-width: 599px) {
-  .headerNav .nav.active .navList {
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    width: 100%;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -531,5 +540,15 @@ header
     background-position: 0 50%, 100% 50%, 10% 100%, 90% 100%, center;
     background-repeat: no-repeat;
     background-size: 15%, 15%, 10%, 10%, 60%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .colContainer .colBox--col3 {
+    display: block;
+  }
+  .colContainer .colBox--col3 .col {
+    margin: 60px auto 0;
+    text-align: center;
+    width: 100%;
   }
 }

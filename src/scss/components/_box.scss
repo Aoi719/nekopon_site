@@ -10,8 +10,16 @@
     }
     &--col3 {
       margin: 25px 0;
+      @include m.tab {
+        display: block;
+      }
       .col {
         width: 350px;
+        @include m.tab {
+          margin: 60px auto 0;
+          width: 100%;
+          text-align: center;
+        }
         @include m.sp {
           width: 100%;
           margin-top: 40px;
@@ -29,9 +37,6 @@
 
 .clipBox {
   &_text {
-    @include m.sp {
-      padding: 60px 0 50px;
-    }
     .head {
       font-family: 'Montserrat', sans-serif;
       font-size: 18px;
@@ -41,21 +46,21 @@
     }
     &.wide {
       padding: 217px 120px 217px 460px;
-      @include m.sp {
+      @include m.expc {
         padding: 150px 20px 60px;
       }
     }
   }
   &_image {
     img{
-      @include m.sp {
+      @include m.expc {
         max-width: 100%;
       }
     }
   }
   &.type-row {
     display: flex;
-    @include m.sp {
+    @include m.expc {
       display: block;
     }
     &.img-left {
@@ -75,11 +80,11 @@
       .clipBox_image {
         z-index: 3;
         margin-top: 60px;
-        @include m.sp {
+        @include m.expc {
           max-width: 100%;
         }
         img {
-          @include m.sp {
+          @include m.expc {
             max-width: 100%;
           }
         }
@@ -87,7 +92,7 @@
       .clipBox_text {
         position: absolute;
         right: 0;
-        @include m.sp {
+        @include m.expc {
           position: static;
           width: 100vw;
           transform: translate(-20px, -115px);
@@ -97,5 +102,14 @@
   }
   .bg-gray {
     background: #F0F0F0;
+  }
+  &:not(.img-overlap){
+    .clipBox_text {
+      &.bg-gray{
+        @include m.sp {
+          padding: 60px 0 50px;
+        }
+      }
+    }
   }
 }
