@@ -6,9 +6,11 @@
 // components
 @use "components/nav";
 @use "components/button";
+@use "components/breadcrumb";
 @use "components/heading";
 @use "components/box";
 @use "components/text";
+@use "components/pager";
 
 // layouts
 @use "layouts/header";

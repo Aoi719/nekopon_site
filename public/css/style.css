@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .headerNav {
   max-width: 100%;
 }
@@ -70,6 +71,24 @@
 }
 .btn--transparent {
   background: transparent;
+}
+
+.breadcrumbWrapper {
+  background: #f7f7f7;
+}
+.breadcrumbList {
+  display: flex;
+}
+.breadcrumbList_item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+.breadcrumbList_item:not(:last-child) {
+  color: #391e88;
+}
+.breadcrumbList_item:not(:last-child) ::after {
+  content: "＞";
+  margin: 0 10px;
 }
 
 .primaryHeading {
@@ -156,6 +175,38 @@
 
 .marker span {
   background: linear-gradient(transparent calc(100% - 12px), #F5F534 calc(100% - 12px));
+}
+
+.pager {
+  margin-top: 40px;
+}
+.pagerBox {
+  display: flex;
+  justify-content: center;
+}
+.pager_item {
+  align-items: center;
+  background: linear-gradient(#7633a4 0%, #250d65 100%);
+  border-radius: 50%;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  width: 45px;
+}
+.pager_item:not(:last-child) {
+  margin-right: 10px;
+}
+.pager_item.current {
+  background: #F1EBF8;
+}
+.pager_item span {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pager_item.current span {
+  color: #4f31a5;
 }
 
 /*-------------
@@ -404,6 +455,9 @@ article .mvHeading_sub {
     transform: translate(-20px, -115px);
     width: 100vw;
   }
+  .section {
+    margin-top: 40px;
+  }
   .section-inner {
     padding: 0 20px;
   }
@@ -452,6 +506,9 @@ article .mvHeading_sub {
   .footer .navList_item:not(:last-child) {
     margin-right: 20px;
   }
+  .breadcrumbWrapper {
+    padding: 5px 20px;
+  }
   .colContainer .colBox {
     display: block;
   }
@@ -482,6 +539,9 @@ article .mvHeading_sub {
   .mv_contents {
     padding: 0 20px;
     text-align: left;
+  }
+  .article .mv_contents {
+    text-align: center;
   }
   .mvHeading_main {
     font-size: 48px;
@@ -548,6 +608,9 @@ article .mvHeading_sub {
   }
   .btn:not(.btn--transparent):hover {
     background: linear-gradient(to left, #7633A4 0%, #250D65 100%);
+  }
+  .breadcrumbWrapper {
+    padding: 15px 0 15px 165px;
   }
   .header .logo {
     transition: 0.5s;

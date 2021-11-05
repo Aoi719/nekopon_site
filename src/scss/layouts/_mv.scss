@@ -30,13 +30,16 @@
     transform: translate(0, -50%);
     width: 100%;
     text-align: center;
-    .article & {
-      position: static;
-      transform: translate(0, 0);
-    }
     @include m.sp {
       padding: 0 20px;
       text-align: left;
+    }
+    .article & {
+      position: static;
+      transform: translate(0, 0);
+      @include m.sp {
+        text-align: center;
+      }
     }
   }
 }

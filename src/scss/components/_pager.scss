@@ -1,0 +1,36 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.pager {
+  margin-top: 40px;
+  &Box {
+    display: flex;
+    justify-content: center;
+  }
+  &_item {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#7633a4 0%, #250d65 100%);
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+    &.current {
+      background: #F1EBF8;
+    }
+    span {
+      color: v.$white;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+    }
+    &.current {
+      span {
+        color: #4f31a5;
+      }
+    }
+  }
+}

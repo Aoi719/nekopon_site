@@ -1,0 +1,35 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.breadcrumb {
+  &Wrapper {
+    background: #f7f7f7;
+    @include m.pc {
+      padding: 15px 0 15px 165px;
+    }
+    @include m.sp {
+      padding: 5px 20px;
+    }
+  }
+  &List {
+    display: flex;
+    &_item {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      &:not(:last-child){
+        color: #391e88;
+        ::after {
+          content: '＞';
+          margin: 0 10px;
+          // position: absolute;
+          // width: 0;
+          // height: 0;
+          // top: 0;
+          // left: 0;
+          // background: ;
+          // border: ;
+        }
+      }
+    }
+  }
+}
