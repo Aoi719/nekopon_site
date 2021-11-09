@@ -80,6 +80,7 @@
   display: flex;
 }
 .breadcrumbList_item {
+  flex-shrink: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
 }
@@ -108,6 +109,18 @@
 }
 .primaryHeading--pcNoCenter {
   text-align: left;
+}
+
+.secondaryHeading {
+  border-left: 6px solid #391E88;
+  font-size: 24px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.tertiaryHeading {
+  font-size: 18px;
+  margin: 56px 0 17px;
 }
 
 .colContainer .colBox {
@@ -354,13 +367,19 @@ article .mvHeading_sub {
 .news {
   max-width: 917px;
 }
+.news a:hover {
+  text-decoration: underline;
+}
 .newsList_inner:not(:first-of-type) {
   margin-top: 15px;
 }
-.newsList .date {
+.newsList .item {
   display: inline-block;
 }
-.newsList .category {
+.news .date {
+  display: inline-block;
+}
+.news .category {
   background-color: #e8e8e8;
   border-radius: 50px;
   display: inline-block;
@@ -370,8 +389,13 @@ article .mvHeading_sub {
   text-align: center;
   width: 80px;
 }
-.newsList .item {
-  display: inline-block;
+
+.article-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+}
+.article .imgBox {
+  margin: 30px 0;
 }
 
 .cva {
@@ -473,6 +497,9 @@ article .mvHeading_sub {
   .news {
     display: block;
   }
+  .article .imgBox img {
+    max-width: 100%;
+  }
   .top .company {
     background-image: url(../images/index_img10_sp.jpg);
     background-position: center;
@@ -508,6 +535,18 @@ article .mvHeading_sub {
   }
   .breadcrumbWrapper {
     padding: 5px 20px;
+  }
+  .breadcrumbList_item:last-child {
+    max-width: 15em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .secondaryHeading {
+    font-size: 18px;
+  }
+  .tertiaryHeading {
+    font-size: 16px;
   }
   .colContainer .colBox {
     display: block;
@@ -558,6 +597,11 @@ article .mvHeading_sub {
   }
   .newsList .item {
     margin-top: 10px;
+  }
+  .article-heading {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 52px;
   }
   .cva {
     margin-top: 80px;
@@ -626,6 +670,9 @@ article .mvHeading_sub {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+  .breadcrumbWrapper {
+    padding: 15px 20px;
+  }
   .colContainer .colBox--col3 {
     display: block;
   }

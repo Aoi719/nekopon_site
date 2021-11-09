@@ -2,6 +2,11 @@
 @use "base/mixins" as m;
 
 .news {
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   // display: flex;
   // justify-content: space-between;
   max-width: 917px;
@@ -24,22 +29,6 @@
         flex-wrap: wrap;
       }
     }
-    .date {
-      display: inline-block;
-    }
-    .category {
-      background-color: #e8e8e8;
-      border-radius: 50px;
-      font-size: 12px;
-      font-weight: bold;
-      text-align: center;
-      display: inline-block;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      width: 80px;
-      margin: 0 20px;
-    }
     .item {
       display: inline-block;
       @include m.expc {
@@ -50,7 +39,43 @@
       }
     }
   }
+  .date {
+    display: inline-block;
+  }
+  .category {
+    background-color: #e8e8e8;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 80px;
+    margin: 0 20px;
+  }
   @include m.expc {
     display: block;
+  }
+}
+
+.article {
+  &-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    @include m.sp {
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 52px;
+    }
+  }
+  .imgBox {
+    margin: 30px 0;
+    img {
+      @include m.expc {
+        max-width: 100%;
+      }
+    }
   }
 }

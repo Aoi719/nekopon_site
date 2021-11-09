@@ -7,6 +7,9 @@
     @include m.pc {
       padding: 15px 0 15px 165px;
     }
+    @include m.tab {
+      padding: 15px 20px;
+    }
     @include m.sp {
       padding: 5px 20px;
     }
@@ -16,18 +19,20 @@
     &_item {
       font-family: 'Montserrat', sans-serif;
       font-size: 12px;
+      flex-shrink: 0;
       &:not(:last-child){
         color: #391e88;
         ::after {
           content: '＞';
           margin: 0 10px;
-          // position: absolute;
-          // width: 0;
-          // height: 0;
-          // top: 0;
-          // left: 0;
-          // background: ;
-          // border: ;
+        }
+      }
+      &:last-child{
+        @include m.sp {
+          max-width: 15em;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
       }
     }
