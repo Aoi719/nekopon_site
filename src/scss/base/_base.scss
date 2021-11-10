@@ -55,6 +55,9 @@ a {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 img {
   vertical-align: bottom;

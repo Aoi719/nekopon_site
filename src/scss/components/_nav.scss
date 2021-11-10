@@ -11,6 +11,12 @@
     bottom: 0;
   }
 .nav {
+    a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
     @include m.expc {
       display: none;
       &.active{

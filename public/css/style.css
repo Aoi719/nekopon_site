@@ -2,6 +2,9 @@
 .headerNav {
   max-width: 100%;
 }
+.headerNav .nav a:hover {
+  text-decoration: none;
+}
 .navList {
   display: flex;
   font-weight: bold;
@@ -68,6 +71,9 @@
   padding: 20px 70px;
   text-align: center;
   width: 220px;
+}
+.btn:hover {
+  text-decoration: none;
 }
 .btn--transparent {
   background: transparent;
@@ -222,6 +228,74 @@
   color: #4f31a5;
 }
 
+/* 各 SNS のブランドカラー */
+.snsButtons_twitter {
+  background: #1da1f2;
+}
+
+.snsButtons_facebook {
+  background: #3b5998;
+}
+
+.snsButtons_pocket {
+  background: #ee4056;
+}
+
+.snsButtons_google {
+  background: #dd4b39;
+}
+
+/* SNS ボタンのグループ */
+.snsButtons {
+  margin: 60px auto 5px;
+  padding: 0 20px;
+}
+
+.snsButtons a {
+  text-decoration: none;
+}
+
+/* 各 SNS ボタンのボックス */
+.snsButtons li {
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  color: white;
+  display: inline-block;
+  /* 水平に並べる */
+  list-style-type: none;
+  margin: 2px;
+  padding: 6px 0px;
+}
+
+/* マウスカーソルを重ねたとき */
+.snsButtons li:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* クリックしたとき */
+.snsButtons li:active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+
+/* アイコン部分 */
+.snsButtons i {
+  font-size: 18pt;
+  margin: 0px;
+  min-width: 40px;
+  padding: 0px 0px 0px 8px;
+  vertical-align: bottom;
+}
+
+/* テキスト部分 */
+.snsButtons_label {
+  display: inline-block;
+  font-size: 12pt;
+  min-width: 80px;
+  padding: 0px 8px 0px 0px;
+}
+
 /*-------------
 header
 -------------*/
@@ -354,21 +428,25 @@ article .mvHeading_sub {
   margin-top: 140px;
   max-width: 1100px;
 }
-.section.width-wide {
+
+.width-wide {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1261px;
 }
-.section.width-narrow {
+
+.width-narrow {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 750px;
 }
-.section.width-full {
+
+.width-full {
   max-width: 100%;
 }
 
 .news {
   max-width: 917px;
-}
-.news a:hover {
-  text-decoration: underline;
 }
 .newsList_inner:not(:first-of-type) {
   margin-top: 15px;
@@ -396,6 +474,45 @@ article .mvHeading_sub {
 }
 .article .imgBox {
   margin: 30px 0;
+}
+
+.others {
+  margin-top: 40px;
+}
+.othersContainer {
+  align-items: center;
+  border-bottom: 1px solid #B8AED5;
+  border-top: 1px solid #B8AED5;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 0;
+}
+.others .prev {
+  color: #391e88;
+  font-size: 14px;
+  width: 50%;
+}
+.others .prev::after {
+  background: #B8AED5;
+  content: "";
+  height: 70px;
+  left: 100%;
+  position: absolute;
+  top: -20px;
+  width: 1px;
+}
+.others .next {
+  color: #391e88;
+  font-size: 14px;
+  padding-left: 30px;
+  width: 50%;
+}
+
+.toNewsPage {
+  color: #391e88;
+  font-size: 14px;
+  margin-top: 17px;
+  text-align: center;
 }
 
 .cva {

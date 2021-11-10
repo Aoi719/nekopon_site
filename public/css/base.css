@@ -58,6 +58,9 @@ a {
   padding: 0;
   vertical-align: baseline;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 img {
   vertical-align: bottom;

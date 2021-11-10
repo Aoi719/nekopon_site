@@ -2,11 +2,6 @@
 @use "base/mixins" as m;
 
 .news {
-  a {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
   // display: flex;
   // justify-content: space-between;
   max-width: 917px;
@@ -78,4 +73,45 @@
       }
     }
   }
+}
+
+.others {
+  // padding: 0 20px;
+  margin-top: 40px;
+  &Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #B8AED5;
+    border-bottom: 1px solid #B8AED5;
+    padding: 45px 0;
+  }
+  .prev {
+    font-size: 14px;
+    // border-right: 1px solid #B8AED5;
+    width: 50%;
+    color: #391e88;
+    &::after {
+    content: "";
+    height: 70px;
+    left: 100%;
+    position: absolute;
+    top: -20px;
+    width: 1px;
+    background: #B8AED5;
+    }
+  }
+  .next {
+    font-size: 14px;
+    width: 50%;
+    padding-left: 30px;
+    color: #391e88;
+  }
+}
+
+.toNewsPage {
+  text-align: center;
+  font-size: 14px;
+  color: #391e88;
+  margin-top: 17px;
 }
