@@ -136,6 +136,10 @@
 .colContainer .colBox--col3 {
   margin: 25px 0;
 }
+.article .colContainer .colBox--col3 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 .colContainer .colBox--col3 .col {
   width: 350px;
 }
@@ -152,11 +156,12 @@
 .clipBox_text .head.type-center {
   text-align: center;
 }
+.clipBox_text .head.type-small {
+  font-size: 16px;
+  font-weight: normal;
+}
 .clipBox_text.wide {
   padding: 217px 120px 217px 460px;
-}
-.article .clipBox_image {
-  margin-right: 50px;
 }
 .article .clipBox_image img {
   max-width: 445px;
@@ -166,6 +171,9 @@
 }
 .clipBox.type-row.img-left {
   flex-direction: row;
+}
+.article .clipBox.type-row.img-left {
+  margin-right: 50px;
 }
 .clipBox.type-row.img-right {
   flex-direction: row-reverse;
@@ -593,10 +601,6 @@ article .mvHeading_sub {
   .clipBox_text.wide {
     padding: 150px 20px 60px;
   }
-  .article .clipBox_image {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .article .clipBox_image img {
     max-width: 100%;
   }
@@ -605,6 +609,10 @@ article .mvHeading_sub {
   }
   .clipBox.type-row {
     display: block;
+  }
+  .article .clipBox.type-row.img-left {
+    margin-left: auto;
+    margin-right: auto;
   }
   .clipBox.type-row.img-overlap .clipBox_image {
     max-width: 100%;
@@ -695,6 +703,9 @@ article .mvHeading_sub {
   }
   .colContainer .colBox--col3 .col img {
     width: 100%;
+  }
+  .article.works .colContainer .colBox--col3 .col {
+    margin-top: 80px;
   }
   .clipBox:not(.img-overlap) .clipBox_text.bg-gray {
     padding: 60px 0 50px;

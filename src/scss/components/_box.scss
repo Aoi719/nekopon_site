@@ -13,9 +13,13 @@
       @include m.tab {
         display: block;
       }
+      .article & {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
       .col {
         width: 350px;
-        @include m.tab {
+          @include m.tab {
           margin: 60px auto 0;
           width: 100%;
           text-align: center;
@@ -28,6 +32,11 @@
           width: 350px;
           @include m.sp {
             width: 100%;
+          }
+        }
+        .article.works & {
+          @include m.sp {
+            margin-top: 80px;
           }
         }
       }
@@ -45,6 +54,10 @@
       &.type-center{
         text-align: center;
       }
+      &.type-small {
+        font-size: 16px;
+        font-weight: normal;
+      }
       @include m.expc {
         text-align: center;
       }
@@ -57,13 +70,6 @@
     }
   }
   &_image {
-    .article & {
-      margin-right: 50px;
-      @include m.expc {
-        margin-right: auto;
-        margin-left: auto;
-      }
-    }
     img{
       .article & {
         max-width: 445px;
@@ -83,6 +89,13 @@
     }
     &.img-left {
       flex-direction: row;
+      .article & {
+        margin-right: 50px;
+        @include m.expc {
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
     }
     &.img-right {
       flex-direction: row-reverse;

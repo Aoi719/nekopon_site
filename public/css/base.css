@@ -118,6 +118,10 @@ input, select {
   text-align: center;
 }
 
+.mt-0 {
+  margin-top: 0 !important;
+}
+
 .mtb-25 {
   margin-bottom: 25px;
   margin-top: 25px;
