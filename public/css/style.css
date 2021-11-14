@@ -148,10 +148,18 @@
   font-size: 18px;
   font-weight: bold;
   margin: 20px 0;
+}
+.clipBox_text .head.type-center {
   text-align: center;
 }
 .clipBox_text.wide {
   padding: 217px 120px 217px 460px;
+}
+.article .clipBox_image {
+  margin-right: 50px;
+}
+.article .clipBox_image img {
+  max-width: 445px;
 }
 .clipBox.type-row {
   display: flex;
@@ -179,6 +187,9 @@
 }
 .clipBox .bg-gray {
   background: #F0F0F0;
+}
+.article .clipBox {
+  margin-top: 60px;
 }
 
 .lead {
@@ -576,8 +587,18 @@ article .mvHeading_sub {
   .primaryHeading--pcNoCenter {
     text-align: center;
   }
+  .clipBox_text .head {
+    text-align: center;
+  }
   .clipBox_text.wide {
     padding: 150px 20px 60px;
+  }
+  .article .clipBox_image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .article .clipBox_image img {
+    max-width: 100%;
   }
   .clipBox_image img {
     max-width: 100%;

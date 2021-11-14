@@ -41,8 +41,13 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 18px;
       font-weight: bold;
-      text-align: center;
       margin: 20px 0;
+      &.type-center{
+        text-align: center;
+      }
+      @include m.expc {
+        text-align: center;
+      }
     }
     &.wide {
       padding: 217px 120px 217px 460px;
@@ -52,7 +57,20 @@
     }
   }
   &_image {
+    .article & {
+      margin-right: 50px;
+      @include m.expc {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
     img{
+      .article & {
+        max-width: 445px;
+        @include m.expc {
+          max-width: 100%;
+        }
+      }
       @include m.expc {
         max-width: 100%;
       }
@@ -112,4 +130,8 @@
       }
     }
   }
+  .article & {
+    margin-top: 60px;
+  }
+
 }
