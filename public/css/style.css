@@ -558,16 +558,17 @@ article .mvHeading_sub {
 .footer .copy small {
   font-family: "Montserrat", sans-serif;
 }
-
-.top .company {
-  padding-top: 100px;
-}
 .top .recruit .section-inner {
   padding: 0;
 }
 .top .recruit .clipBox_image img {
   max-width: 665px;
 }
+
+.company {
+  padding-top: 100px;
+}
+
 @media screen and (max-width: 1024px) {
   .headerNav {
     bottom: 0;
@@ -646,7 +647,10 @@ article .mvHeading_sub {
   .article .imgBox img {
     max-width: 100%;
   }
-  .top .company {
+  .top .recruit .clipBox_image img {
+    max-width: 100%;
+  }
+  .company {
     background-image: url(../images/index_img10_sp.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -655,10 +659,8 @@ article .mvHeading_sub {
     padding-bottom: 100px;
     padding-top: 0;
   }
-  .top .recruit .clipBox_image img {
-    max-width: 100%;
-  }
 }
+
 @media screen and (max-width: 1024px) and (max-width: 1024px) {
   .headerNav .nav.active .navList {
     align-items: center;
@@ -668,6 +670,7 @@ article .mvHeading_sub {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 599px) {
   .nav {
     transition: 0.5s;
@@ -759,6 +762,7 @@ article .mvHeading_sub {
     margin-top: 20px;
   }
 }
+
 @media screen and (min-width: 1025px) {
   .header .navList_item:not(:last-child) {
     margin-right: 25px;
@@ -811,13 +815,14 @@ article .mvHeading_sub {
   .header .logo:hover {
     opacity: 0.7;
   }
-  .top .company {
+  .company {
     background-image: url(../images/index_img06.jpg), url(../images/index_img07.jpg), url(../images/index_img08.jpg), url(../images/index_img09.jpg), url(../images/index_img10.jpg);
     background-position: 0 50%, 100% 50%, 10% 100%, 90% 100%, center;
     background-repeat: no-repeat;
     background-size: 15%, 15%, 10%, 10%, 60%;
   }
 }
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .breadcrumbWrapper {
     padding: 15px 20px;
