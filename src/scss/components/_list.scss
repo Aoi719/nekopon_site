@@ -1,0 +1,31 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.descList{
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    @include m.sp {
+      flex-direction: column;
+    }
+    dt{
+      border-bottom: 1px solid #DDDDDD;
+      width: 20%;
+      padding: 27px 0 22px;
+      font-weight: normal;
+      @include m.sp {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+    dd {
+      padding: 27px 0 22px;
+      width: 80%;
+      border-bottom: 1px solid #DDDDDD;
+      @include m.sp {
+        width: 100%;
+        padding-top: 0;
+      }
+    }
+  }
+}

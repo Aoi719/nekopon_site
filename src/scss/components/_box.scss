@@ -90,10 +90,16 @@
     &.img-left {
       flex-direction: row;
       .article & {
-        margin-right: 50px;
-        @include m.expc {
-          margin-right: auto;
-          margin-left: auto;
+        .clipBox_image{
+          margin-right: 50px;
+          @include m.expc {
+            margin-right: auto;
+            margin-left: auto;
+          }
+          @include m.sp {
+            margin-right: 0;
+            margin-bottom: 30px;
+          }
         }
       }
     }
