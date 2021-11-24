@@ -152,5 +152,43 @@
   .article & {
     margin-top: 60px;
   }
+}
 
+.borderBox {
+  margin-top: 36px;
+  &-inner {
+    padding: 57px 95px;
+    border: 1px solid #b8aed5;
+    border-radius: 10px;
+    background-color: #fff;
+    @include m.sp {
+      padding: 28px 20px;
+    }
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .btnBox {
+    margin-top: 50px;
+    @include m.sp {
+      margin-top: 40px;
+    }
+    &-inner {
+      + p {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+// 仮
+.videoBox {
+  height: 700px;
+  background: #ebebeb;
+  @include m.sp {
+    height: 188px;
+  }
 }

@@ -9,6 +9,13 @@
     font-size: 36px;
     font-weight: bold;
     line-height: 0.9;
+    span {
+      font-family: inherit;
+      @include m.sp {
+        display: inline-block;
+        line-height: 1.1;
+      }
+    }
   }
   &_sub {
     font-size: 13px;
@@ -38,5 +45,10 @@
   margin: 56px 0 17px;
   @include m.sp {
     font-size: 16px;
+  }
+  &.type-02 {
+    color: #391E88;
+    font-size: 32px;
+    text-align: center;
   }
 }

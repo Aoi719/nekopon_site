@@ -1,0 +1,14 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.article {
+  &.recruit {
+    background-image: url(../images/recruit_bg.png);
+    .leadText {
+      margin-top: 34px;
+      @include m.sp {
+        margin-top: 19px;
+      }
+    }
+  }
+}

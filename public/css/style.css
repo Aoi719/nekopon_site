@@ -108,6 +108,9 @@
   font-weight: bold;
   line-height: 0.9;
 }
+.primaryHeading_main span {
+  font-family: inherit;
+}
 .primaryHeading_sub {
   font-size: 13px;
   font-weight: 600;
@@ -127,6 +130,11 @@
 .tertiaryHeading {
   font-size: 18px;
   margin: 56px 0 17px;
+}
+.tertiaryHeading.type-02 {
+  color: #391E88;
+  font-size: 32px;
+  text-align: center;
 }
 
 .colContainer .colBox {
@@ -198,6 +206,33 @@
 }
 .article .clipBox {
   margin-top: 60px;
+}
+
+.borderBox {
+  margin-top: 36px;
+}
+.borderBox-inner {
+  background-color: #fff;
+  border: 1px solid #b8aed5;
+  border-radius: 10px;
+  padding: 57px 95px;
+}
+.borderBox .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.borderBox .btnBox {
+  margin-top: 50px;
+}
+.borderBox .btnBox-inner + p {
+  margin-top: 8px;
+}
+
+.videoBox {
+  background: #ebebeb;
+  height: 700px;
 }
 
 .lead {
@@ -486,6 +521,10 @@ article .mvHeading_sub {
 }
 
 .width-full {
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+}
+.width-full.imgBox img {
   max-width: 100%;
 }
 
@@ -594,6 +633,12 @@ article .mvHeading_sub {
   padding-top: 100px;
 }
 
+.article.recruit {
+  background-image: url(../images/recruit_bg.png);
+}
+.article.recruit .leadText {
+  margin-top: 34px;
+}
 @media screen and (max-width: 1024px) {
   .headerNav {
     bottom: 0;
@@ -685,7 +730,6 @@ article .mvHeading_sub {
     padding-top: 0;
   }
 }
-
 @media screen and (max-width: 1024px) and (max-width: 1024px) {
   .headerNav .nav.active .navList {
     align-items: center;
@@ -695,7 +739,6 @@ article .mvHeading_sub {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 599px) {
   .nav {
     transition: 0.5s;
@@ -715,6 +758,10 @@ article .mvHeading_sub {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .primaryHeading_main span {
+    display: inline-block;
+    line-height: 1.1;
   }
   .secondaryHeading {
     font-size: 18px;
@@ -742,6 +789,15 @@ article .mvHeading_sub {
   .clipBox:not(.img-overlap) .clipBox_text.bg-gray {
     padding: 60px 0 50px;
   }
+  .borderBox-inner {
+    padding: 28px 20px;
+  }
+  .borderBox .btnBox {
+    margin-top: 40px;
+  }
+  .videoBox {
+    height: 188px;
+  }
   .lead {
     font-size: 32px;
   }
@@ -754,6 +810,7 @@ article .mvHeading_sub {
   .descList-inner dt {
     border-bottom: none;
     padding-bottom: 0;
+    width: 100%;
   }
   .descList-inner dd {
     padding-top: 0;
@@ -801,8 +858,10 @@ article .mvHeading_sub {
   .top .recruit {
     margin-top: 20px;
   }
+  .article.recruit .leadText {
+    margin-top: 19px;
+  }
 }
-
 @media screen and (min-width: 1025px) {
   .header .navList_item:not(:last-child) {
     margin-right: 25px;
@@ -862,7 +921,6 @@ article .mvHeading_sub {
     background-size: 15%, 15%, 10%, 10%, 60%;
   }
 }
-
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .breadcrumbWrapper {
     padding: 15px 20px;

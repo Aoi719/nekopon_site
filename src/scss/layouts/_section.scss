@@ -27,5 +27,12 @@
   max-width: 750px;
 }
 .width-full{
-  max-width: 100%;
+  // width: 100vw;
+  margin-right: calc(50% - 50vw) !important;
+  margin-left: calc(50% - 50vw) !important;
+  &.imgBox {
+    img {
+      max-width: 100%;
+    }
+  }
 }
