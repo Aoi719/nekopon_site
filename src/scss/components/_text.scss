@@ -22,3 +22,15 @@
     }
   }
 }
+
+.contact-text {
+  margin-top: 67px;
+  @include m.expc{
+    margin-top: 37px;
+  }
+  span{
+    @include m.sp {
+      display: inline-block;
+    }
+  }
+}
