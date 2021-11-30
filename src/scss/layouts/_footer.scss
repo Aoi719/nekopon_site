@@ -1,6 +1,16 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
+.cva {
+  p {
+    span {
+      @include m.sp {
+        display: inline-block;
+      }
+    }
+  }
+}
+
 .footer {
   &Container {
     background: #120e19;

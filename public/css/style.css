@@ -437,6 +437,22 @@
   margin-top: 50px;
 }
 
+.pageTop {
+  opacity: 0;
+  transition: 0.5s;
+}
+.pageTop.active {
+  bottom: 45px;
+  max-width: 50px;
+  opacity: 1;
+  position: fixed;
+  right: 45px;
+  z-index: 998;
+}
+.pageTop.active img {
+  max-width: 50px;
+}
+
 /*-------------
 header
 -------------*/
@@ -457,6 +473,9 @@ header
 .header_image.active {
   background: #21054d;
 }
+.header .logo {
+  z-index: 998;
+}
 .header .logo img {
   width: 160px;
 }
@@ -469,7 +488,8 @@ header
   min-height: auto;
 }
 .mvImage {
-  background: url("../images/index_img01.jpg") no-repeat top center/cover;
+  background: url("../images/index_img01.jpg") no-repeat;
+  background-size: cover;
   min-height: inherit;
 }
 .article .mvImage {
@@ -591,6 +611,8 @@ article .mvHeading_sub {
 }
 
 .news {
+  display: flex;
+  justify-content: space-between;
   max-width: 917px;
 }
 .newsList_inner:not(:first-of-type) {
@@ -747,6 +769,9 @@ article .mvHeading_sub {
     margin-left: auto;
     margin-right: auto;
   }
+  .clipBox.type-row.img-right .clipBox_text {
+    padding: 60px 0 50px;
+  }
   .clipBox.type-row.img-overlap .clipBox_image {
     max-width: 100%;
   }
@@ -853,6 +878,9 @@ article .mvHeading_sub {
     display: inline-block;
     line-height: 1.1;
   }
+  .primaryHeading_main {
+    font-size: 24px;
+  }
   .secondaryHeading {
     font-size: 18px;
   }
@@ -897,6 +925,9 @@ article .mvHeading_sub {
   .contact-text span {
     display: inline-block;
   }
+  .map {
+    height: 240px;
+  }
   .descList-inner {
     flex-direction: column;
   }
@@ -912,6 +943,10 @@ article .mvHeading_sub {
   .formBox-inner {
     padding: 30px;
   }
+  .pageTop.active {
+    bottom: 20px;
+    right: 20px;
+  }
   .headerContainer {
     max-width: 100%;
     padding: 20px;
@@ -919,6 +954,9 @@ article .mvHeading_sub {
   .mvContainer .btn {
     margin-left: 0;
     margin-right: 0;
+  }
+  .mvImage {
+    background-position: 60%;
   }
   .mv_contents {
     padding: 0 20px;
@@ -951,8 +989,14 @@ article .mvHeading_sub {
   .cva {
     margin-top: 80px;
   }
+  .cva p span {
+    display: inline-block;
+  }
   .top .recruit {
     margin-top: 20px;
+  }
+  .top .primaryHeading_main {
+    font-size: 30px;
   }
   .article.recruit .leadText {
     margin-top: 19px;

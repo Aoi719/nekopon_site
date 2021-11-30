@@ -1,8 +1,14 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
 .map {
   height: 394px;
   width: 100%;
   &-item {
     width: 100%;
     height: 100%;
+  }
+  @include m.sp {
+  height: 240px;
   }
 }

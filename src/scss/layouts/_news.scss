@@ -2,8 +2,8 @@
 @use "base/mixins" as m;
 
 .news {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   max-width: 917px;
   &List {
     &_inner {

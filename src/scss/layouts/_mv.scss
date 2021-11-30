@@ -17,7 +17,11 @@
   }
   &Image {
     min-height: inherit;
-    background: url('../images/index_img01.jpg') no-repeat top center/ cover;
+    background: url('../images/index_img01.jpg') no-repeat;
+    background-size: cover;
+    @include m.sp {
+      background-position: 60%;
+    }
     .article & {
       min-height: auto;
       padding: 105px 0 70px;

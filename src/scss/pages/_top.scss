@@ -20,7 +20,15 @@
       }
     }
   }
+  .primaryHeading {
+    &_main {
+      @include m.sp {
+        font-size: 30px;
+      }
+    }
+  }
 }
+
 .company {
   padding-top: 100px;
   @include m.expc {
