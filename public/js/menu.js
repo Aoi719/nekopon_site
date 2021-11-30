@@ -13,8 +13,10 @@ if($('body').hasClass('top')){
   jQuery(window).on('scroll', function(){
     if(windowHeight < jQuery(this).scrollTop()) {
       jQuery('.header_image').addClass('active');
+      jQuery('.pageTop').addClass('active');
     } else {
       jQuery('.header_image').removeClass('active');
+      jQuery('.pageTop').removeClass('active');
     }
   });
 }
