@@ -31,6 +31,8 @@ if($('body').hasClass('article')){
   });
 }
 
+//--------------------------
+
 // SPハンバーガーメニュー
 let menuBar = document.getElementById('menuBar');
 let spNav = document.getElementById('spNav');

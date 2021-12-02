@@ -63,9 +63,17 @@
       }
     }
     &.wide {
-      padding: 217px 120px 217px 460px;
+      width: 80%;
+      height: 680px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
       @include m.expc {
         padding: 150px 20px 60px;
+        height: auto;
+        width: auto;
+        align-items: center;
       }
     }
   }
@@ -120,18 +128,23 @@
       .clipBox_image {
         z-index: 3;
         margin-top: 60px;
+        max-width: 60%;
         @include m.expc {
           max-width: 100%;
         }
         img {
-          @include m.expc {
-            max-width: 100%;
-          }
+          max-width: 100%;
         }
       }
       .clipBox_text {
         position: absolute;
         right: 0;
+        &_inner {
+          @include m.pc {
+            max-width: 40%;
+            margin-right: 60px;
+          }
+        }
         @include m.expc {
           position: static;
           width: 100vw;

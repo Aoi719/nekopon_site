@@ -28,26 +28,3 @@
     }
   }
 }
-
-.company {
-  padding-top: 100px;
-  @include m.expc {
-    padding-top: 0;
-    margin-top: 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/index_img10_sp.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 100px;
-  }
-  @include m.pc {
-    background-repeat: no-repeat;
-    background-image: url(../images/index_img06.jpg),
-                      url(../images/index_img07.jpg),
-                      url(../images/index_img08.jpg),
-                      url(../images/index_img09.jpg),
-                      url(../images/index_img10.jpg);
-    background-position: 0 50%, 100% 50%, 10% 100%, 90% 100%, center;
-    background-size: 15%, 15%, 10%, 10%, 60%;
-  }
-}

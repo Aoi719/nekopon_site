@@ -169,7 +169,12 @@
   font-weight: normal;
 }
 .clipBox_text.wide {
-  padding: 217px 120px 217px 460px;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 680px;
+  justify-content: center;
+  width: 80%;
 }
 .article .clipBox_image img {
   max-width: 445px;
@@ -195,7 +200,11 @@
 }
 .clipBox.type-row.img-overlap .clipBox_image {
   margin-top: 60px;
+  max-width: 60%;
   z-index: 3;
+}
+.clipBox.type-row.img-overlap .clipBox_image img {
+  max-width: 100%;
 }
 .clipBox.type-row.img-overlap .clipBox_text {
   position: absolute;
@@ -438,6 +447,7 @@
 }
 
 .pageTop {
+  cursor: pointer;
   opacity: 0;
   transition: 0.5s;
 }
@@ -610,6 +620,10 @@ article .mvHeading_sub {
   max-width: 100%;
 }
 
+.company {
+  padding-top: 100px;
+}
+
 .news {
   display: flex;
   justify-content: space-between;
@@ -713,10 +727,6 @@ article .mvHeading_sub {
   max-width: 665px;
 }
 
-.company {
-  padding-top: 100px;
-}
-
 .article.recruit {
   background-image: url(../images/recruit_bg.png);
 }
@@ -754,7 +764,10 @@ article .mvHeading_sub {
     text-align: center;
   }
   .clipBox_text.wide {
+    align-items: center;
+    height: auto;
     padding: 150px 20px 60px;
+    width: auto;
   }
   .article .clipBox_image img {
     max-width: 100%;
@@ -773,9 +786,6 @@ article .mvHeading_sub {
     padding: 60px 0 50px;
   }
   .clipBox.type-row.img-overlap .clipBox_image {
-    max-width: 100%;
-  }
-  .clipBox.type-row.img-overlap .clipBox_image img {
     max-width: 100%;
   }
   .clipBox.type-row.img-overlap .clipBox_text {
@@ -817,6 +827,15 @@ article .mvHeading_sub {
   .section-inner {
     padding: 0 20px;
   }
+  .company {
+    background-image: url(../images/index_img10_sp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    padding-bottom: 100px;
+    padding-top: 0;
+  }
   .newsList_inner:first-of-type {
     margin-top: 60px;
   }
@@ -834,15 +853,6 @@ article .mvHeading_sub {
   }
   .top .recruit .clipBox_image img {
     max-width: 100%;
-  }
-  .company {
-    background-image: url(../images/index_img10_sp.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0;
-    padding-bottom: 100px;
-    padding-top: 0;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 1024px) {
@@ -1047,6 +1057,10 @@ article .mvHeading_sub {
   }
   .breadcrumbWrapper {
     padding: 15px 0 15px 165px;
+  }
+  .clipBox.type-row.img-overlap .clipBox_text_inner {
+    margin-right: 60px;
+    max-width: 40%;
   }
   .header .logo {
     transition: 0.5s;
