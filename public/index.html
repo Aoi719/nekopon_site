@@ -153,7 +153,7 @@
       </div>
     </section>
     <!-- works -->
-    <section class="section width-wide">
+    <section class="section width-wide works">
       <div class="section-inner">
         <div class="colBox">
           <div class=" col">
@@ -162,19 +162,21 @@
                 <img src="images/index_img05.jpg" alt="">
               </div>
               <div class="clipBox_text bg-gray wide">
-                <h2 class="primaryHeading">
-                  <span class="primaryHeading_main">WORKS</span><br>
-                  <span class="primaryHeading_sub">制作実績</span>
-                </h2>
-                <p class="ta-c mtb-25">
-                  様々なジャンルのWebサイト制作が可能です。<br>
-                  ご購入やお申込み数の増加などを実現します！
-                </p>
-                <div class="btnBox">
-                  <div class="btnBox-inner">
-                    <a class="btn" href="./works.html">
-                      MORE
-                    </a>
+                <div class="clipBox_text_inner">
+                  <h2 class="primaryHeading">
+                    <span class="primaryHeading_main">WORKS</span><br>
+                    <span class="primaryHeading_sub">制作実績</span>
+                  </h2>
+                  <p class="ta-c mtb-25">
+                    様々なジャンルのWebサイト制作が可能です。<br>
+                    ご購入やお申込み数の増加などを実現します！
+                  </p>
+                  <div class="btnBox">
+                    <div class="btnBox-inner">
+                      <a class="btn" href="./works.html">
+                        MORE
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -240,10 +242,10 @@
     </section>
   </main>
 
-  <div class="pageTop">
-    <a href="#top">
+  <div class="pageTop" id="js-pageTop">
+    <!-- <a href="#top"> -->
       <img src="images/page-top.png" alt="ページの一番上へ戻る">
-    </a>
+    <!-- </a> -->
   </div>
 
   <!-- footer埋め込み -->
@@ -255,5 +257,6 @@
     $('#js-footer').load('parts/footer.html');
   </script>
   <!-- <script src="js/menu.js"></script> -->
+  <script src="js/scroll.js" defer></script>
 </body>
 </html>

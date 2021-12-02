@@ -4,6 +4,7 @@
 .pageTop {
   opacity: 0;
   transition: 0.5s;
+  cursor: pointer;
   &.active {
     opacity: 1;
     position: fixed;
