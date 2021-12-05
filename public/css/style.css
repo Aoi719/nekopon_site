@@ -295,72 +295,11 @@
   color: #4f31a5;
 }
 
-/* 各 SNS のブランドカラー */
-.snsButtons_twitter {
-  background: #1da1f2;
-}
-
-.snsButtons_facebook {
-  background: #3b5998;
-}
-
-.snsButtons_pocket {
-  background: #ee4056;
-}
-
-.snsButtons_google {
-  background: #dd4b39;
-}
-
-/* SNS ボタンのグループ */
 .snsButtons {
-  margin: 60px auto 5px;
-  padding: 0 20px;
+  margin-top: 60px;
 }
-
-.snsButtons a {
-  text-decoration: none;
-}
-
-/* 各 SNS ボタンのボックス */
 .snsButtons li {
-  border-radius: 4px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-  color: white;
   display: inline-block;
-  /* 水平に並べる */
-  list-style-type: none;
-  margin: 2px;
-  padding: 6px 0px;
-}
-
-/* マウスカーソルを重ねたとき */
-.snsButtons li:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-/* クリックしたとき */
-.snsButtons li:active {
-  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
-  transform: translateY(2px);
-}
-
-/* アイコン部分 */
-.snsButtons i {
-  font-size: 18pt;
-  margin: 0px;
-  min-width: 40px;
-  padding: 0px 0px 0px 8px;
-  vertical-align: bottom;
-}
-
-/* テキスト部分 */
-.snsButtons_label {
-  display: inline-block;
-  font-size: 12pt;
-  min-width: 80px;
-  padding: 0px 8px 0px 0px;
 }
 
 .map {
