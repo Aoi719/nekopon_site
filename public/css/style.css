@@ -629,6 +629,12 @@ article .mvHeading_sub {
   justify-content: space-between;
   max-width: 917px;
 }
+.news.article {
+  display: block;
+}
+.newsList_inner {
+  display: flex;
+}
 .newsList_inner:not(:first-of-type) {
   margin-top: 15px;
 }
@@ -639,9 +645,11 @@ article .mvHeading_sub {
   display: inline-block;
 }
 .news .category {
+  align-self: flex-start;
   background-color: #e8e8e8;
   border-radius: 50px;
   display: inline-block;
+  flex: 0 0 80px;
   font-size: 12px;
   font-weight: bold;
   margin: 0 20px;
@@ -1073,6 +1081,9 @@ article .mvHeading_sub {
     background-position: 0 50%, 100% 50%, 10% 100%, 90% 100%, center;
     background-repeat: no-repeat;
     background-size: 15%, 15%, 10%, 10%, 60%;
+  }
+  .newsList .item {
+    max-width: 540px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
